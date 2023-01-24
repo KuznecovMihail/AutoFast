@@ -1,0 +1,42 @@
+$bg_menu: #283035;
+$bg_number: #C72931;   
+$bg_drop_down: #303A40; 
+
+.marks {
+
+    &__container {
+        
+    }
+
+    &__cards {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: 11px;
+        margin-top: 30px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 110px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #4D4D4D;
+    }
+
+    &__img {
+        text-align: center;
+    }
+
+    &__quantity {
+        text-align: center;
+        margin-top: 8px;
+    }
+}

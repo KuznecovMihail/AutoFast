@@ -1,0 +1,212 @@
+$bg_menu: #283035;
+$bg_number: #C72931;   
+$bg_drop_down: #303A40; 
+
+.parametr {
+
+    &__body {
+        background: $bg_menu;
+        padding: 30px 82px 61px;
+        box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.04);
+        border-radius: 20px 250px;
+    }
+
+    &__top {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__about {
+        display: flex;
+        margin-right: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__mark {
+        display: flex;
+        margin-right: 20px;
+        padding: 20px;
+        background: $bg_drop_down;
+        border: 1px solid #4D4D4D;
+        border-radius: 14px;
+        align-items: center;
+    }
+
+    &__img {
+        margin-left: 82px;
+        width: 10px;
+        
+    }
+
+    &__model {
+        display: flex;
+        padding: 20px;
+        background: $bg_drop_down;
+        border: 1px solid #4D4D4D;
+        border-radius: 14px;
+        align-items: center;
+    }
+
+    &__set {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__settitle {
+        font-weight: 500;
+        font-size: 16px;
+        border: 1px solid #4D4D4D;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    &__settitle:not(:last-child){
+        margin-right: 10px;
+    }
+
+    @media screen and (max-width: 1460px) {
+        &__img {
+            margin-left: 20px;
+        } 
+        &__settitle {
+            border-radius: 10px;
+            padding: 20px;
+        }
+    }
+    @media screen and (max-width: 1335px) {
+        &__top{
+            justify-content: center;
+        }
+        &__set{
+            margin-top: 20px;
+        }
+    }
+    @media screen and (max-width: 840px) {
+        
+        &__set{
+            justify-content: center;
+        }
+        
+        &__settitle{
+            margin-top: 10px;
+            margin-right: 10px;
+            text-align: center;
+            width: 40%;
+        }
+    }
+    @media screen and (max-width: 719px) {
+        &__mark{
+            width: 80%;
+            margin-right: 0px;
+        }
+        &__model{
+            width: 80%;
+            margin-top: 15px;
+        }
+        
+    }
+    @media screen and (max-width: 679px) {
+        &__body {
+            border-radius: 20px 150px;
+            padding: 30px 32px 61px;
+        }
+        
+    }
+    @media screen and (max-width: 540px) {
+        &__settitle {
+            width: 80%;
+        }
+        
+    }
+    @media screen and (max-width: 470px) {
+        &__body {
+            border-radius: 20px;
+            padding: 30px 12px 61px;
+        }
+        
+    }
+}
+
+.parametr {
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__dvi {
+        margin-right: 80px;
+        form{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+
+    &__radio{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 20px;
+    }
+
+    &__polz {
+        width: 45%;
+    }
+    &__item{
+        margin-bottom: 18px;
+    }
+
+    &__subtitle{
+        font-size: 20px;
+        margin: 50px 0px 30px;
+    }
+    &__button{
+        background: $bg_number;
+        color: #fff;
+        width: 100%;
+        border: 0px;
+        border-radius: 14px;
+        padding: 14px 0px;
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    .price-to{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .price-from{
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        &__dvi {
+            margin-right: 30px;
+            
+        }
+    }
+    @media screen and (max-width: 1075px) {
+        &__bottom {
+            justify-content: center;
+        }
+        &__polz {
+            width: 80%;
+        }
+    }
+    @media screen and (max-width: 467px) {
+        .price-to{
+            font-size: 12px;
+        }
+        .price-from{
+            font-size: 12px;
+        }
+    }
+}
+
+
