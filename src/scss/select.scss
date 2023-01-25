@@ -1,0 +1,75 @@
+.select {
+  margin-right: 20px;
+	position: relative;
+}
+.select.is-active .select__body {
+  transition: all 0.4s ease;
+	display: block;
+}
+
+.select__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: $bg_drop_down;
+  border: 1px solid #4D4D4D;
+  border-radius: 14px;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+.select__body {
+  z-index: 100000;
+  background: #303A40;
+	display: none;
+	left: 0;
+  border-radius: 20px;
+	position: absolute;
+	right: 0;
+	top: 100%;
+  margin-top: 4px;
+  padding: 30px 20px;
+  min-width: 300px;
+  transition: all 0.4s ease;
+}
+.select__flex{
+  display: flex;
+}
+.items{
+  border-left: 1px solid #4D4D4D;
+}
+.select__item {
+	cursor: pointer;
+	font-size: 18px;
+  padding: 0px 35px 15px 15px ;
+  transition: all 0.4s ease;
+  
+}
+
+.select__item:hover {
+	border-left: 2px solid #C72931;
+  transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 720px) {
+  .select__body{
+    left: -50px;
+  }
+}
+@media screen and (max-width: 636px) {
+  .select{
+      margin-right: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .select__flex{
+    display: block;
+  }
+  .select__body{
+    min-width: 150px;
+    left: 0;
+  }
+}

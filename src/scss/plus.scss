@@ -1,0 +1,105 @@
+$bg_menu: #283035;
+$bg_number: #C72931;   
+$bg_drop_down: #303A40; 
+
+
+.plus {
+
+    &_item {
+        position: relative;
+        max-width: 30%;
+        margin-right: 40px;
+        margin-top: 50px;
+    }
+
+    &__card {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    &__number {
+        z-index: 100;
+        position: absolute;
+        top: -35px;
+        left: 39%;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        line-height: 1.5em;  /* подробнее про line-height */
+        text-align: center;  /* выравнять текст по середине по горизонтали */
+        background: $bg_number;
+        font-weight: 500;
+        font-size: 50px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        background: #283035;
+        box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.04);
+        padding: 90px 51px 40px;
+        min-height: 100%;
+        min-width: 350px;
+    }
+    .one{
+        border-radius: 20px 20px 20px 200px;
+    }
+    .two{
+        border-radius: 20px;        
+    }
+    .three{
+        border-radius: 20px 20px 200px 20px;    
+    }
+
+    @media screen and (max-width: 1200px) {
+        &__text {
+            padding: 70px 25px 40px;
+            min-height: 100%;
+            min-width: 250px;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        &__card {
+            flex-direction: column;
+            justify-content: center;  
+            margin-top: 50px;
+        }
+        &_item{
+            max-width: 100%;
+            margin-right: 0px;
+        }
+        .one{
+            border-radius: 20px; 
+        }
+        .two{
+            border-radius: 20px;        
+        }
+        .three{
+            border-radius: 20px;    
+        }
+        &__number {
+            left: 45%;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        
+        &__number {
+            left: 43%;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        
+        &__number {
+            left: 39%;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        
+        &__number {
+            left: 36%;
+        }
+    }
+}
+

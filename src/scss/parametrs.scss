@@ -2,6 +2,7 @@ $bg_menu: #283035;
 $bg_number: #C72931;   
 $bg_drop_down: #303A40; 
 
+
 .parametr {
 
     &__body {
@@ -25,7 +26,7 @@ $bg_drop_down: #303A40;
         justify-content: center;
     }
 
-    &__mark {
+    &__selectheader {
         display: flex;
         margin-right: 20px;
         padding: 20px;
@@ -62,6 +63,13 @@ $bg_drop_down: #303A40;
         border: 1px solid #4D4D4D;
         border-radius: 20px;
         padding: 20px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+
+    .set_active{
+        transition: all 0.4s ease;
+        border-color: $bg_number;
     }
 
     &__settitle:not(:last-child){
@@ -159,6 +167,7 @@ $bg_drop_down: #303A40;
     }
     &__item{
         margin-bottom: 18px;
+        cursor: pointer;
     }
 
     &__subtitle{
@@ -190,6 +199,9 @@ $bg_drop_down: #303A40;
             margin-right: 30px;
             
         }
+        &__bottom {
+            justify-content: center;
+        }
     }
     @media screen and (max-width: 1075px) {
         &__bottom {
@@ -199,12 +211,21 @@ $bg_drop_down: #303A40;
             width: 80%;
         }
     }
+    @media screen and (max-width: 636px) {
+        &__about{
+            display: block;
+            margin-right: 0;
+        }
+    }
     @media screen and (max-width: 467px) {
         .price-to{
             font-size: 12px;
         }
         .price-from{
             font-size: 12px;
+        }
+        &__button{
+            border-radius: 7px;
         }
     }
 }

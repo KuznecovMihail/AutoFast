@@ -1,7 +1,7 @@
 
 
 .radio{
-    display: none;
+    //display: none;
 }
 
 .fake{
@@ -26,7 +26,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .2s;
-    opacity: 1;
+    opacity: 0;
 }
 
 .radio:checked + .fake::before{

@@ -1,0 +1,106 @@
+.swiper__container > ._container{
+    padding: 0px;
+}
+
+.swiper {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    &__card {
+        position: relative;
+    }
+
+    &__img {
+        margin: 0 auto;
+        padding: 0 40px 40px;
+    }
+
+    &__button {
+        position: absolute;
+        top: 63%;
+        left: 9%;
+
+    }
+    &__imgarrow{
+        width: 80px;
+    }
+    
+
+    @media screen and (max-width: 992px) {
+        &__button {
+            top: 57%;
+            left: 14%;
+        } 
+    }
+    @media screen and (max-width: 779px) {
+        &__button {
+            top: 47%;
+            left: 14%;
+        } 
+    }
+    @media screen and (max-width: 576px) {
+        &__button {
+            top: 37%;
+            left: 14%;
+        } 
+    }
+    @media screen and (max-width: 475px) {
+        &__button {
+            top: 45%;
+            left: 17%;
+        } 
+        &__img {
+            height: 170px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &__imgarrow{
+            display: none;
+        }
+    }
+
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    width: 80px;
+    right: 0%;
+    left: auto;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    width: 80px;
+    left: 0%;
+    right: auto;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        width: 50px;
+        right: 2%;
+        left: auto;
+    }
+    
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        width: 50px;
+        left: 2%;
+        right: auto;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        display: none;
+    }
+}
+
+
+
+
+
+
+

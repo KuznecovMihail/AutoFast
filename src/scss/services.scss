@@ -1,0 +1,107 @@
+.services {
+
+
+  &__card {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    //flex-wrap: wrap;
+  }
+
+  &__item {
+    text-align: center;
+    background: #283035;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    padding: 26px 14.5%;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  &__img {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  &__about {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__aboutimg {
+    margin-right: 42px;
+    max-width: 55%;
+  }
+
+  &__text {
+    max-width: 40%;
+  }
+
+  &__aboutsubtitle {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  &__paragraf {
+    margin-top: 30px;
+    line-height: 25.2px;
+  }
+
+  &__ps {
+    margin-top: 40px;
+    text-align: right;
+    font-family: 'Caveat';
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+
+  @media screen and (max-width: 992px) {
+    &__about{
+      text-align: center;
+      flex-direction: column;
+    }
+    &__text {
+      margin-top: 50px;
+      max-width: 90%;
+    }
+    &__aboutimg{
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 810px) {
+    &__card{
+      flex-direction: column;
+    }
+    &__item{
+      margin: 0 auto;
+      max-width: 80%;
+    }
+    &__item:not(:last-child){
+      margin: 0 auto;
+    }
+    &__item:last-child{
+      margin-top: 30px;
+    }
+    &__img {
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 524px) {
+    &__subtitle{
+      font-size: 20px;
+    }
+    &__img {
+      max-width: 70%;
+    }
+  }
+}
